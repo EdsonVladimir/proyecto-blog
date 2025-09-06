@@ -1,9 +1,6 @@
 package org.esosa.api.backend.dto.Response;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 public class ImagenDto {
-    @JsonProperty("id_imagen")
     private Long idImagen;
     private String url;
     private String descripcion;

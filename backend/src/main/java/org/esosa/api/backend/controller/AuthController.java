@@ -1,6 +1,5 @@
 package org.esosa.api.backend.controller;
 
-import io.swagger.v3.oas.annotations.tags.Tag;
 import org.esosa.api.backend.dto.Request.LoginRequest;
 
 import org.esosa.api.backend.dto.Response.LoginResponse;
@@ -19,7 +18,6 @@ public class AuthController {
     }
 
     @PostMapping("/login")
-    @Tag(name = "Iniciar Sesion", description = "Operaciones relacionadas con el inicio de sesión de authores, tanto para crear Blogs como para comentar Blogs")
     public ResponseEntity<LoginResponse> login(@RequestBody LoginRequest loginRequest) {
         System.out.println("Intentando iniciar sesión para: " + loginRequest.getCorreoElectronico()+ " " +loginRequest.getPassword());
         LoginResponse response = authService.login(

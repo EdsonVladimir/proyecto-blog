@@ -1,4 +1,4 @@
-Edson Vladimir Sosa Sacari
+# Edson Vladimir Sosa Sacari
 
 Proyecto Blog
 Descripción del Proyecto
@@ -47,18 +47,18 @@ Arquitectura Visual del Proyecto
 |     Base de datos (5432)    |
 +-----------------------------+
 
-Flujo de Datos
+# Flujo de Datos
 Usuario crea blog -> Frontend envía POST -> Backend recibe datos -> Backend guarda en PostgreSQL
 Usuario solicita blogs -> Frontend hace GET -> Backend consulta PostgreSQL -> Backend devuelve datos -> Frontend muestra
 
-Manual para Levantar el Proyecto
+# Manual para Levantar el Proyecto
 Requisitos Previos
 
 Docker y Docker Compose instalados.
 
 Clonar repositorio:
 
-git clone <url-del-repositorio>
+git clone https://github.com/EdsonVladimir/proyecto-blog.git
 cd proyecto-blog
 
 Paso 1: Revisar variables de entorno

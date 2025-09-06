@@ -2,7 +2,6 @@ package org.esosa.api.backend.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
-import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.esosa.api.backend.dto.Request.ComentarioRequestDto;
 import org.esosa.api.backend.service.ComentarioService;
@@ -14,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/comentarios")
-@Tag(name = "Comentar Blogs", description = "Operaciones relacionadas con los comentarios en los blogs")
 public class ComentarioController {
     private final ComentarioService comentarioService;
 

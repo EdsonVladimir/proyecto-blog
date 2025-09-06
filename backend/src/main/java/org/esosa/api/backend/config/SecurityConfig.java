@@ -19,10 +19,8 @@ public class SecurityConfig {
                         .requestMatchers(
                                 "/api/auth/login",
                                 "/api/usuarios/crear",
-                                "/api/usuarios/authores",
                                 "/api/blogs/**",
                                 "/api/blogs/todos",
-                                "/api/images/create",
                                 "/api/comentarios/crear",
                                 "/swagger-ui/**",
                                 "/v3/api-docs/**",
