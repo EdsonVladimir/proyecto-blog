@@ -100,10 +100,8 @@ public class BlogService {
             blog.setFechaReg(rs.getObject("fecha_reg", LocalDateTime.class));
 
             try {
-                // Parsear JSON de autor
                 blog.setAutor(objectMapper.readValue(rs.getString("autor"), UsuarioDto.class));
 
-                // Parsear JSON de imágenes
                 blog.setImagenes(objectMapper.readValue(
                         rs.getString("imagenes"),
                         new TypeReference<List<ImagenDto>>() {}

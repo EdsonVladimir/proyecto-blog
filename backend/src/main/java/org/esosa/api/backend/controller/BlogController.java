@@ -6,6 +6,7 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.esosa.api.backend.dto.Request.BlogRequestDto;
 import org.esosa.api.backend.dto.Request.BlogUpdateRequestDto;
@@ -18,6 +19,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/blogs")
+@Tag(name = "Blogs", description = "Operaciones relacionadas con los blogs")
 public class BlogController {
 
     private final BlogService blogService;

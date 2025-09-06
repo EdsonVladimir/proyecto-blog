@@ -6,6 +6,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class UsuarioService {
@@ -23,5 +25,12 @@ public class UsuarioService {
         String encodedPassword = passwordEncoder.encode(password);
         Usuario usuario = new Usuario( nombres, apellidoPaterno, apellidoMaterno, fechaNacimiento, paisResidencia, correoElectronico, encodedPassword, 2L);
         return usuarioRepository.save(usuario);
+    }
+
+    public List<Usuario> obtenerUsuarios() {
+        Iterable<Usuario> iterable = usuarioRepository.findAll();
+        List<Usuario> usuarios = new ArrayList<>();
+        iterable.forEach(usuarios::add);
+        return usuarios;
     }
 }
