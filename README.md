@@ -58,7 +58,7 @@ Docker y Docker Compose instalados.
 
 Clonar repositorio:
 
-git clone https://github.com/EdsonVladimir/proyecto-blog.git
+git clone https://github.com/EdsonVladimir/proyecto-blog.git esta implementado en la rama develop
 cd proyecto-blog
 
 Paso 1: Revisar variables de entorno
